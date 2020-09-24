@@ -1,0 +1,23 @@
+@import "./../../assets/stylesheets/style.scss";
+
+.footer-wrapper { 
+  background-color: #f1f1f1;
+  .wrapper {
+    width: 1200px;
+    margin: 40px auto 0;
+    padding: 20px 0 50px;
+    text-align: center;
+
+    > ul {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 10px;
+      text-align: center;
+      > li {
+        display: inline-block;
+        margin-right: 30px;
+        font-weight: 500;
+      }
+    }
+  }
+}

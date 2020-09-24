@@ -1,0 +1,76 @@
+@import "./../../assets/stylesheets/style.scss";
+
+.board-wrapper {
+  width: 1200px;
+  margin: 20px auto;
+  > .series-info {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ebebeb;
+    > a {
+      border: none;
+      font-size: 20px;
+      > svg {
+        margin-right: 10px;
+      }
+    }
+  }
+
+  > .title-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    > .wrapper {
+      > .title {
+        font-size: 20px;
+      }
+    }
+    > .date-wrapper {
+      color: #ababab;
+    }
+  }
+
+  > .content-wrapper {
+    margin: 20px 0;
+  }
+
+  > .reply-wrapper {
+    > .title {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+    > .reply-list {
+      margin-bottom: 20px;
+    }
+    > .input-form {
+      border-top: 1px solid #ebebeb;
+      padding-top: 20px;
+      > label {
+        display: block;
+        margin-bottom: 10px;
+      }
+      > .input {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        > textarea {
+          width: calc(100% - 60px);
+          margin-right: 10px;
+          height: 50px;
+          padding: 8px 12px;
+          border: 1px solid #ebebeb;
+        }
+        > button {
+          width: 50px;
+          font-size: 17px;
+          background-color: #ebebeb;
+          height: 68px;
+          &:hover {
+            background-color: $primary-color;
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,36 @@
+@import './../../assets/stylesheets/style.scss';
+
+.header-wrapper {
+  border-bottom: 1px solid #e5e5e5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .right {
+    padding-right: 30px;
+
+    > ul {
+      list-style: none;
+      margin: auto;
+      li {
+        display: inline-block;
+        margin-left: 50px;
+        position: relative;
+        .search-input {
+          border-radius: 5px;
+          padding: 10px 15px;
+          width: 200px;
+          border: 1px solid #e5e5e5;
+        }
+        .search-btn {
+          position: absolute;
+          background: none;
+          border: none;
+          right: 8px;
+          top: 12px;
+          color: #ababab;
+        }
+      }
+    }
+  }
+}
